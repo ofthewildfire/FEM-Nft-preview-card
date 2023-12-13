@@ -1,0 +1,196 @@
+/* Root variables */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'ff300';
+  src: url(/assets/fonts/Outfit-Light.ttf);
+  font-display: swap;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'ff400';
+  src: url(/assets/fonts/Outfit-Regular.ttf);
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ff600';
+  src: url(/assets/fonts/Outfit-SemiBold.ttf);
+  font-display: swap;
+  font-weight: 600;
+}
+
+:root {
+  --soft-blue-clr: #8bacda;
+  --cyan-clr: #00fff7;
+  --main-bg-clr: #0d192b;
+  --card-bg-clr: #14253d;
+  --darkblue-line-clr: #2f415b;
+  --white-clr: #ffffff;
+  --ff300: 'ff300';
+  --ff400: 'ff400';
+  --ff600: 'ff600';
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: .5em 2em;
+  margin: 2em 0;
+  background-color: var(--darkblue-line-clr);
+  font-family: var(--ff400);
+  color: var(--white-clr);
+  font-size: 1.25rem;
+}
+
+.attribution a {
+  color: var(--cyan-clr)
+}
+
+.red-accent {
+  color: red;
+}
+
+/* Styles */
+
+
+/* Center everything on the body so i can have the attr still */
+body {
+  min-height: 100vh;
+  font-family: var(--ff400);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: var(--main-bg-clr);
+  line-height: 1.5;
+  padding: 0 2em;
+  max-width: 90rem;
+}
+
+/* Card */
+.nft-card {
+  background-color: var(--card-bg-clr);
+  color: var(--white-clr);
+  padding: 1.25em;
+  border-radius: 5px;
+  max-width: 25rem;
+  font-size: 1.125rem;
+  display: grid;
+  gap: 15px;
+}
+
+.nft-image {
+  width: 100%;
+}
+
+.nft-image>img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.nft-card-content {
+  display: grid;
+  gap: 20px;
+}
+
+.nft-trading-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nft-title {
+  font-size: 1.5rem;
+  font-family: var(--ff600);
+}
+
+.nft-details {
+  color: var(--soft-blue-clr);
+}
+
+.eth-price,
+.eth-history-details {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.eth-cyan {
+  color: var(--cyan-clr);
+  font-family: var(--ff400);
+}
+
+.eth-history {
+  color: var(--soft-blue-clr);
+}
+
+.border-line {
+  border-top: 2px solid var(--darkblue-line-clr);
+}
+
+.nft-created-by-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* justify-content: space-between; */
+  font-family: var(--ff300);
+}
+
+.nft-card-avatar {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 2px solid var(--white-clr);
+  border-radius: 50%;
+}
+
+.accent {
+  color: var(--soft-blue-clr);
+  padding: 0 0.2em;
+}
+
+/* Hover state */
+
+.overlay {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nft-image:is(:hover)>img {
+  cursor: pointer;
+  opacity: .35;
+}
+
+.overlay-hover-eye {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cyan-clr);
+  border-radius: 10px;
+  display: none;
+}
+
+.nft-image:is(:hover)>.overlay-hover-eye {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.nft-image:is(:hover)>.overlay-hover-eye>svg {
+  fill: var(--white-clr);
+  scale: 2.5;
+}
+
+.hover-accent:is(:hover, :active, :focus) {
+  color: var(--cyan-clr);
+  cursor: pointer;
+}
