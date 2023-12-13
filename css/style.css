@@ -81,7 +81,7 @@ body {
   background-color: var(--card-bg-clr);
   color: var(--white-clr);
   padding: 1.25em;
-  border-radius: 5px;
+  border-radius: 15px;
   max-width: 25rem;
   font-size: 1.125rem;
   display: grid;
