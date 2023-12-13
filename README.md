@@ -35,8 +35,9 @@ Users should be able to:
 ### Links
 
 - Solution URL:
-  [Add solution URL here](https://github.com/ofthewildfire/FEM-Nft-preview-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+  [https://github.com/ofthewildfire/FEM-Nft-preview-card](https://github.com/ofthewildfire/FEM-Nft-preview-card)
+- Live Site URL:
+  [https://fem-nft-preview-card-kc.vercel.app/](https://fem-nft-preview-card-kc.vercel.app/)
 
 ## My process
 
@@ -47,9 +48,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above
 with your own choices**
@@ -124,4 +122,5 @@ else's solution. This is the perfect place to give them some credit.
 **Note: Delete this note and edit this section's content as necessary. If you
 completed this challenge by yourself, feel free to delete this section
 entirely.**
+
 # FEM-Nft-preview-card
